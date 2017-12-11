@@ -15,7 +15,7 @@ end
 
 def add_backer(name)
   @backers << name
-  name.projects << self unless name.projects.include?(self)
+  name.back_project << self unless name.projects.include?(self)
 end
 
 end
