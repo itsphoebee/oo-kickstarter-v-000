@@ -15,7 +15,7 @@ end
 
 def back_project(title)
   @backed_projects << title
-  title.backers << self unless title.backers.include?(self)
+  Project.backers << self unless title.backers.include?(self)
 end
 
 
