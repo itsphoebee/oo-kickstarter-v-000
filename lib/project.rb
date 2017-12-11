@@ -9,10 +9,13 @@ def initialize(title)
   @backers = []
 end
 
+def backers
+  @backers
+end
 
 def add_backer(name)
   @backers << name
-  name.projects << self unless name.projects.include?(self)
+  Backer.projects << self unless name.projects.include?(self)
 end
 
 end
