@@ -9,9 +9,6 @@ def initialize(title)
   @backers = []
 end
 
-def backers
-  @backers
-end
 
 def add_backer(name)
   @backers << name
