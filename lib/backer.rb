@@ -9,10 +9,6 @@ def initialize(name)
   @backed_projects = []
 end
 
-def projects
-@backed_projects
-end
-
 def back_project(title)
   @backed_projects << title
   title.backers << self unless title.backers.include?(self)
