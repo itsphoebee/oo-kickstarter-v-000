@@ -15,7 +15,7 @@ end
 
 def back_project(title)
   @backed_projects << title
-  title.backers << self
+  Project.add_backer(self)
 end
 
 
