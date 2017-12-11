@@ -10,12 +10,12 @@ def initialize(name)
 end
 
 def projects
-  @backed_projects
+@backed_projects
 end
 
 def back_project(title)
   @backed_projects << title
-  Project.backers << self unless title.backers.include?(self)
+  title.backers << self
 end
 
 
